@@ -77,23 +77,51 @@ hellcode/
 ---
 
 ## 🤝 Contributing
-We welcome contributions! Here’s how you can help:
-1. **Fork the repo & create a branch**  
-   ```bash
-   git checkout -b feature/new-card
-   ```
-2. **Add or modify markdown files** (`cards/` directory).  
-3. **Run `generate_anki.py` to test your changes.**  
-4. **Commit & push your changes**  
-   ```bash
-   git commit -m "Added new pattern: XYZ"
-   git push origin feature/new-card
-   ```
-5. **Submit a Pull Request (PR)!** 🚀
+We welcome contributions! If you want to add new cards, improve existing ones, or fix issues, follow these steps:
+
+### **✅ 1. Fork the Repository**
+If you're not a collaborator, click **"Fork"** at the top-right of this repo on GitHub.  
+This creates a **copy of the repo under your GitHub account**.
+
+### **✅ 2. Clone Your Fork**
+After forking, clone the repo to your local machine:
+
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/hellcode.git
+cd hellcode
+```
+
+### **✅ 3. Create a New Branch**
+Even in your fork, it’s good practice to work in a **separate branch**:
+
+```bash
+git checkout -b feature/new-pattern
+```
+
+### **✅ 4. Add or Modify Cards**
+- Navigate to `cards/` and add a new markdown file for a new pattern.  
+- Follow the existing structure.
+- Run `generate_anki.py` to test.
+
+### **✅ 5. Commit and Push Your Changes**
+Once you're happy with the changes, commit and push:
+
+```bash
+git add .
+git commit -m "Added new pattern: XYZ"
+git push origin feature/new-pattern
+```
+
+### **✅ 6. Open a Pull Request (PR)**
+- Go to your forked repo on GitHub.
+- Click **"Compare & pull request"**.
+- Fill in details and submit the PR.
+
+We’ll review it and merge it if everything looks good! 🚀
 
 ---
 
-## 💡 FAQ
+## **💡 FAQ**
 ### ❓ Can I add my own Anki cards?
 Yes! Just add a markdown file to `cards/`, following the existing structure.
 
@@ -110,4 +138,3 @@ This project aims to **help developers systematically master algorithms and prob
 We encourage contributions to keep improving the deck and making studying **more efficient for everyone!**
 
 🔥 **Happy Coding!** 🔥
-
