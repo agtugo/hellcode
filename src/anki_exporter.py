@@ -17,8 +17,8 @@ def create_anki_deck(deck_name, notes):
         templates=[
             {
                 "name": "Topic and Description",
-                "qfmt": "<h1>{{Topic}}</h1><p>{{Description}}</p>",
-                "afmt": "{{FrontSide}}<br><br><b>Tags:</b> {{Tags}}",
+                "qfmt": "<h1>{{Topic}}</h1>",
+                "afmt": "{{FrontSide}}<br><p>{{Description}}</p><br><b>Tags:</b> {{Tags}}",
             }
         ],
     )
@@ -36,8 +36,8 @@ def create_anki_deck(deck_name, notes):
         templates=[
             {
                 "name": "Topic and Iterative Steps",
-                "qfmt": "<h1>{{Topic}}</h1><p>{{Iterative Steps}}</p>",
-                "afmt": "{{FrontSide}}<br><details><summary>Show Code</summary><pre>{{Iterative Code}}</pre></details><br><b>Tags:</b> {{Tags}}",
+                "qfmt": "<h1>{{Topic}}</h1>",
+                "afmt": "{{FrontSide}}<br><p>{{Iterative Steps}}</p><br><details><summary>Show Code</summary><pre>{{Iterative Code}}</pre></details><br><b>Tags:</b> {{Tags}}",
             }
         ],
     )
@@ -55,8 +55,8 @@ def create_anki_deck(deck_name, notes):
         templates=[
             {
                 "name": "Topic and Recursive Steps",
-                "qfmt": "<h1>{{Topic}}</h1><p>{{Recursive Steps}}</p>",
-                "afmt": "{{FrontSide}}<br><details><summary>Show Code</summary><pre>{{Recursive Code}}</pre></details><br><b>Tags:</b> {{Tags}}",
+                "qfmt": "<h1>{{Topic}}</h1>",
+                "afmt": "{{FrontSide}}<br><p>{{Recursive Steps}}</p><br><details><summary>Show Code</summary><pre>{{Recursive Code}}</pre></details><br><b>Tags:</b> {{Tags}}",
             }
         ],
     )
