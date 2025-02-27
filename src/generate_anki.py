@@ -36,10 +36,14 @@ for topic_folder in sorted(os.listdir(base_dir)):
     iterative_code_file = os.path.join(topic_path, "iterative_code.py")
     recursive_steps_file = os.path.join(topic_path, "recursive_steps.md")
     recursive_code_file = os.path.join(topic_path, "recursive_code.py")
+    tags_file = os.path.join(topic_path, "tags.txt")
 
     # Read topic
     with open(topic_file, "r", encoding="utf-8") as f:
         topic = f.read().strip()
+    # Read tags
+    with open(tags_file, "r", encoding="utf-8") as f:
+        tags = f.read().strip()
 
     # Convert files
     description_html = convert_markdown_to_html(description_file)
@@ -52,11 +56,12 @@ for topic_folder in sorted(os.listdir(base_dir)):
     csv_rows.append(
         [
             topic,
-            description_html,
-            iterative_steps_html,
-            iterative_code_html,
-            recursive_steps_html,
-            recursive_code_html,
+            description_html or "",
+            iterative_steps_html or "",
+            iterative_code_html or "",
+            recursive_steps_html or "",
+            recursive_code_html or "",
+            tags or "",
         ]
     )
 
@@ -64,11 +69,12 @@ for topic_folder in sorted(os.listdir(base_dir)):
     anki_notes.append(
         [
             topic,
-            description_html,
-            iterative_steps_html,
-            iterative_code_html,
-            recursive_steps_html,
-            recursive_code_html,
+            description_html or "",
+            iterative_steps_html or "",
+            iterative_code_html or "",
+            recursive_steps_html or "",
+            recursive_code_html or "",
+            tags or "",
         ]
     )
 
