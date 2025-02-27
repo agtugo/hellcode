@@ -1,0 +1,1 @@
+Maintain a window over an array or string to solve subarray/substring problems.

@@ -1,0 +1,1 @@
+Explore as far as possible along each branch before backtracking.

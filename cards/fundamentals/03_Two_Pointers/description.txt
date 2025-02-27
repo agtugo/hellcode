@@ -1,0 +1,1 @@
+Use two indices to process elements in linear time, common in sorted arrays or linked lists.
